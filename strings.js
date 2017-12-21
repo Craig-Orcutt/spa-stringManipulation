@@ -6,7 +6,8 @@ var testString = "";
 
 // function to reverse what ever is put into the input window
 mirrorBtn.addEventListener('click', function(){
-    let splitInput = inputVal.split('');
+    testString = input.value;
+    let splitInput = testString.split('');
     let reverseInput = splitInput.reverse();
     let reJoinInput = reverseInput.join('');
     output.innerHTML = reJoinInput;
@@ -14,6 +15,11 @@ mirrorBtn.addEventListener('click', function(){
 
 // function to alphabetize the letters in the input
 alphabetBtn.addEventListener('click', ()=>{
+    testString = input.value;  
+    splitInput = testString.split('');
+    sortInput = splitInput.sort();
+    output.innerHTML = sortInput.join('');
+
 
 });
 // function palindrome() {
@@ -37,4 +43,3 @@ alphabetBtn.addEventListener('click', ()=>{
 //      alert("message");
 //      return false;
 //      }
-//   }
